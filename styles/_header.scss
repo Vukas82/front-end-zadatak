@@ -1,0 +1,270 @@
+header {
+    width: 100%;
+    height: 80px;
+    margin: auto;
+    background: transparent;
+    position: absolute;
+    z-index: 99;
+    color: $headerText;
+
+    h2 {
+        text-transform: capitalize;
+    }
+
+    .header__wraper {
+        width: 80%;
+        height: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background: $primary;
+
+
+        .logo {
+            width: 15%;
+            // width: 165px;
+            height: 100%;
+            // display: inline-block;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        nav {
+            display: inline-block;
+            position: relative;
+            width: 85%;
+            height: 100%;
+            margin: auto;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            ul {
+                // display: inline-block;
+                height: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                list-style: none;
+                padding: 0;
+                margin: 0;
+
+                li {
+                    // display: inline-block;
+                    position: relative;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    a {
+                        text-decoration: none;
+                        padding: 10px 15px;
+                        color: $headerText;
+
+                    }
+
+                    a:hover::after {
+                        // display: none;
+                        content: "";
+                        width: 100%;
+                        height: 5px;
+                        background: $hoverUnderline;
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                    }
+                }
+
+                li:hover {
+                    background-color: $hoverNav;
+
+                }
+            }
+
+            .left__nav {
+                // display: none;
+            }
+
+            .active__search {
+                // display: none;
+                // visibility: hidden;
+                position: absolute;
+                // right: 250px;
+                right: 28%;
+
+                top: 2px;
+            }
+
+
+            .search__box {
+
+                display: none;
+
+                width: 72%;
+                height: 100%;
+                // display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+
+
+
+                .search__container {
+                    height: 50%;
+                    width: 100%;
+                }
+
+                form {
+                    width: 100%;
+                    height: 100%;
+                    background: $hoverNav;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    border-radius: 6px;
+
+
+                    input {
+                        width: 90%;
+                        height: 100%;
+                        background: $hoverNav;
+                        border: none;
+                        padding: 0;
+                        outline: none;
+                        font-size: 14px;
+                        font-family: $font-Regular;
+                        color: $headerText;
+                    }
+
+                    button {
+                        width: 10%;
+                        height: 100%;
+                        outline: none;
+                        border: none;
+                        background: $hoverNav;
+                        border-radius: 6px;
+
+                    }
+
+                    span {
+                        width: 12px;
+                        height: 12px;
+                        margin-right: 1rem;
+                        cursor: pointer;
+                        // visibility: visible
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+
+
+
+
+
+            .right__nav {
+                margin-right: 2rem;
+                min-width: 25%;
+                // width: 33%;
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+    /* Style The Dropdown Button */
+    .dropbtn {
+        position: relative;
+        background-color: $primary;
+        color: $headerText;
+        padding: 16px;
+        border: none;
+        cursor: pointer;
+
+        span {
+            width: 8px;
+            height: 8px;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-8px);
+
+            img {
+                width: 100%;
+                height: 100%
+            }
+        }
+    }
+
+    /* The container <div> - needed to position the dropdown content */
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    /* Dropdown Content (Hidden by Default) */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        left: -100%;
+        top: 100%;
+        background-color: $primary;
+        min-width: 112px;
+        border: 1px solid #f3f5f9;
+        border-radius: 4px;
+        z-index: 1;
+    }
+
+    .dropdown-content::before {
+        content: url('/images/arrow-top.svg');
+        position: absolute;
+        top: -15px;
+        right: 22px;
+        width: 20px;
+        height: 20px;
+    }
+
+    /* Links inside the dropdown */
+    .dropdown-content a {
+        padding: 1px 1rem !important;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a::after {
+        display: none;
+    }
+
+    /* Change color of dropdown links on hover */
+    .dropdown-content a:hover {
+        background-color: #f1f1f1
+    }
+
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    /* Change the background color of the dropdown button when the dropdown content is shown */
+    .dropdown:hover .dropbtn {
+        background-color: $hoverNav;
+    }
+}

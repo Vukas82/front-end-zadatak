@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/fonts/stylesheet.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="header__wraper">
+
+            <div class="logo">
+                <img src="/images/logo.svg" alt="logo">
+            </div>
+            <nav>
+
+                <ul id="left__nav" class="left__nav">
+                    <li>
+                        <a href="#">
+                            <h2>home</h2>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h2>discover</h2>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h2>about us</h2>
+                        </a>
+                    </li>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h2>contact</h2>
+                        </a>
+                    </li>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h2>help</h2>
+                        </a>
+                    </li>
+                </ul>
+
+                <div id="search__box" class="search__box" style="display:none">
+                    <div class="search__container">
+                        <form action="/action__page.php">
+                            <button type="submit"><img src="/images/icon-search.svg" alt="search bar"></button>
+
+                            <input type="text" placeholder="Search text" name="search">
+                            <span onclick="searchBarToogle()"><img src="/images/icon-x.svg" alt="close"></span>
+                        </form>
+                    </div>
+                </div>
+
+                <ul class="search__ico">
+                    <li id="active__search" class="active__search">
+                        <a href="#">
+                            <img onclick="searchBarToogle()" src="/images/icon-search.svg" alt="search">
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="right__nav">
+                    <li>
+                        <a href="#">
+                            <h2>sign up</h2>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h2>login</h2>
+                        </a>
+                    </li>
+                    <li>
+                        <!-- <a href="#">
+                                            <h2> -->
+                        <div class="dropdown">
+                            <button class="dropbtn">
+                                <h2>en</h2><span>
+                                    <img src="/images/lenguage-arrow.svg" alt="drop-down">
+
+                                </span>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#">
+                                    <h2>english</h2>
+                                </a>
+                                <a href="#">
+                                    <h2>german</h2>
+                                </a>
+
+                            </div>
+                        </div>
+
+                        <!-- </h2>
+                                        </a> -->
+                    </li>
+                </ul>
+
+
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <div class="viewport">
+        <img src="/images/background.jpg" alt="sea-beach">
+        <div class="viewport__wraper">
+            <div class="viewport__wraper__left">
+                <div class="content__h1">
+                    <h1>experience the world</h1>
+                </div>
+                <div class="content__p">
+                    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quod!</h1>
+                </div>
+                <div class="action">
+                    <a class="explore" href="#">explore all</a>
+                    <a class="video" href="#"><span><img src="/images/arrow-top.svg"
+                                alt="explore all destination"></span>
+                        Watch storie</a>
+                </div>
+            </div>
+
+
+            <div class="viewport__wraper__rightt">
+                <div class="review">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="/js/main.js"></script>
+
+
+</body>
+
+</html>
