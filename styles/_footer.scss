@@ -1,3 +1,121 @@
 footer {
-    background: green;
+    width: 100%;
+    height: auto;
+
+    .footer__top {
+        width: 100%;
+        height: auto;
+        background: $acordion-back;
+
+
+        .footer__top__container {
+
+            width: 80%;
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 100px 0;
+
+            .footer__all {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: left;
+                color: $primary;
+                box-sizing: border-box;
+
+                img {
+                    margin-bottom: 50px;
+                    position: absolute;
+                    top: -40px;
+
+                }
+
+                h5 {
+                    text-transform: uppercase;
+                    font-size: 14px;
+                    font-family: 'Montserrat-Bold';
+                    margin-bottom: 40px;
+                }
+
+                p {
+                    margin: 7px;
+                }
+            }
+
+            .company {
+                width: 35%;
+                margin-top: 60px;
+                position: relative;
+
+            }
+
+            .about {
+                width: 20%;
+
+            }
+
+            .features {
+                width: 20%;
+
+            }
+
+            .tools {
+                width: 25%;
+
+            }
+
+        }
+    }
+
+
+
+
+    .footer__bottom {
+        width: 100%;
+        height: 60px;
+        background: #87c5ec;
+
+        .footer__bottom__container {
+            width: 80%;
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            .footer__botom__left {
+                width: 30%;
+                height: 100%;
+
+                p {
+                    text-transform: capitalize;
+                    // font-size: 12px;
+                    font-family: 'Montserrat-Regular';
+                    color: $primary;
+                }
+            }
+
+            .footer__botom__social {
+                width: 30%;
+                height: 100%;
+
+                ul {
+                    float: right;
+
+                    li {
+                        display: inline-block;
+                        margin: 0 5px;
+
+
+                        a {
+                            img {}
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
