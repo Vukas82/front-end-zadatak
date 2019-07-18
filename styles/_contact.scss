@@ -1,0 +1,144 @@
+.contact {
+    width: 100%;
+    // height: auto;
+    height: 90vh;
+    background: $acordionBack;
+    padding: 70px 0;
+
+    h5 {
+        font-size: 32px;
+        font-family: 'Montserrat-Bold';
+        // color: $headerText;
+        margin-top: 0px;
+        text-align: center;
+    }
+
+    .contact__wraper {
+        position: relative;
+        width: 80%;
+        height: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 150px;
+
+
+        .contact__img__1 {
+            width: 30%;
+            height: auto;
+            position: absolute;
+            left: -50px;
+            top: 130px;
+            // background: lightgreen;
+            // background-image: url('/images/contact-img-1.jpg');
+            // background-position: center;
+            // background-size: cover;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center center;
+
+            }
+
+        }
+
+        .contact__img__2 {
+            width: 20%;
+            height: auto;
+            position: absolute;
+            left: 30%;
+            top: 60px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center center;
+            }
+
+        }
+
+        .contact__form {
+            width: 40%;
+            height: 100%;
+            position: absolute;
+            right: 0;
+            top: 60px;
+
+            font-size: 14px;
+            font-family: 'Montserrat-Regular';
+            color: $hoverUnderline;
+
+            /* Style inputs with type="text", select elements and textareas */
+            input[type=text],
+            select,
+            textarea {
+                width: 100%;
+                /* Full width */
+                padding: 12px;
+                /* Some padding */
+                border: 1px solid #ccc;
+                /* Gray border */
+                border-radius: 4px;
+                /* Rounded borders */
+                box-sizing: border-box;
+                /* Make sure that padding and width stays in place */
+                margin-top: 6px;
+                /* Add a top margin */
+                margin-bottom: 16px;
+                /* Bottom margin */
+                // resize: vertical;
+                /* Allow the user to vertically resize the textarea (not horizontally) */
+                text-align: left;
+                font-size: 16px;
+                font-family: 'Montserrat-Medium';
+                color: #878787;
+            }
+
+            label {
+                text-align: left;
+                font-size: 14px;
+                font-family: 'Montserrat-Bold';
+                color: $hoverUnderline;
+            }
+
+            // body>section.contact>div>div.contact__form>div>form>input[type=checkbox]:nth-child(7) {
+            //     font-size: 14px;
+            //     font-family: 'Montserrat-Medium';
+            //     color: $headerText;
+            // }
+
+
+
+            /* Style the submit button with a specific background color etc */
+            input[type=submit] {
+                background-color: $headerText;
+                font-size: 14px;
+                font-family: 'Montserrat-Medium';
+                color: white;
+                padding: 12px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                margin-top: 30px;
+            }
+
+            /* When moving the mouse over the submit button, add a darker green color */
+            input[type=submit]:hover {
+                background-color: $headerText;
+            }
+
+            /* Add a background color and some padding around the form */
+            .container {
+                border-radius: 5px;
+                // background-color: #f2f2f2;
+                padding: 20px;
+            }
+
+        }
+    }
+}

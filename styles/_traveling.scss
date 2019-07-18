@@ -1,0 +1,137 @@
+.traveling {
+    color: $primary;
+
+    h3 {
+        font-size: 32px;
+        font-family: 'Montserrat-Bold';
+        color: $hoverUnderline;
+        text-align: center;
+        margin-top: 90px;
+        margin-bottom: 160px;
+    }
+
+    .acordion__back {
+        width: 80%;
+        box-sizing: border-box;
+        height: auto;
+        margin: auto;
+        background: $acordion-back;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 80px;
+        border-radius: 4px;
+
+
+        position: relative;
+
+
+        .acordion__back__left {
+            width: 40%;
+            height: 100%;
+            padding: 40px 35px;
+
+            text-align: left;
+
+            h4 {
+                font-size: 28px;
+                font-family: 'Montserrat-Bold';
+                text-transform: capitalize;
+            }
+
+            h5 {
+                font-size: 16px;
+                font-family: 'Montserrat-Bold';
+            }
+
+            p {
+                font-size: 14px;
+                font-family: 'Montserrat-Regular';
+                margin-bottom: 40px;
+            }
+
+            a {
+                padding: 12px 35px;
+                font-size: 14px;
+                font-family: 'Montserrat-Medium';
+                background: $hoverUnderline;
+                color: $primary;
+                text-align: center;
+                border-radius: 6px;
+                text-decoration: none;
+            }
+        }
+
+        .acordion__back__right {
+
+            width: 40%;
+            height: auto;
+            padding-right: 30px;
+            padding-left: 30px;
+            border-radius: 4px;
+
+
+            background: $acordionBack;
+            // background: green;
+            position: absolute;
+            right: 80px;
+            top: -60px;
+
+            .acordion__wraper {
+                border-radius: 6px;
+
+                h4 {
+                    font-size: 23px;
+                    font-family: 'Montserrat-Bold';
+                    color: $acordionTitle;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .traveling__description {
+        width: 80%;
+        margin: auto;
+        padding: 0;
+        padding-bottom: 120px;
+
+
+        color: #1d1d1d;
+        font-family: 'Montserrat-Regular';
+        font-size: 16px;
+        text-align: left;
+        margin-top: 150px;
+
+
+        .traveling__description__holder {
+            width: 80%;
+
+            h4 {
+                font-size: 28px;
+                font-family: 'Montserrat-Bold';
+            }
+
+            h5 {
+                font-size: 23px;
+                margin: 60px 0;
+            }
+
+            p {
+                margin-bottom: 0px;
+            }
+
+            ul {
+                padding-left: 20px;
+                margin-top: 40px;
+            }
+
+            a {
+                color: #4a79bc;
+                text-decoration: none;
+            }
+        }
+    }
+
+}
