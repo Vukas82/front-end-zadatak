@@ -27,9 +27,8 @@ footer {
                 box-sizing: border-box;
 
                 img {
-                    margin-bottom: 50px;
                     position: absolute;
-                    top: -40px;
+                    top: -20px;
 
                 }
 
@@ -41,14 +40,15 @@ footer {
                 }
 
                 p {
-                    margin: 7px;
+                    margin: 5px;
                 }
             }
 
             .company {
                 width: 35%;
-                margin-top: 60px;
                 position: relative;
+                padding-top: 50px;
+                box-sizing: border-box;
 
             }
 
@@ -107,7 +107,7 @@ footer {
 
                     li {
                         display: inline-block;
-                        margin: 0 5px;
+                        margin: 0 20px;
 
 
                         a {

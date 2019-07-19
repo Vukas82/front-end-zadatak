@@ -66,6 +66,8 @@
     background-color: white;
     display: none;
     overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
 
     font-size: 14px;
     font-family: 'Montserrat-Regular';

@@ -1,0 +1,170 @@
+@media (min-width: 991.98px) {
+    #nav-small {
+        display: none;
+    }
+
+    .small-drop-btn {
+        display: none;
+    }
+}
+
+
+@media (max-width: 991.98px) {
+    body {
+        padding: 0 10px;
+    }
+
+    h1 {
+        font-size: 55px;
+    }
+
+    .slider {
+        width: 100%;
+
+        .slider__wraper {
+            margin-left: 24px;
+            width: 100%;
+
+            p {
+                width: 100%;
+            }
+
+            .carousel {
+                height: 70%;
+            }
+        }
+    }
+
+    // ===================================
+    .offer {
+        .offer__wraper {
+            width: 100%;
+            margin: 0 24px;
+        }
+
+        .offer__img {
+
+            max-width: 60%;
+        }
+    }
+
+    // ===========================
+    .traveling {
+        h3 {
+            margin-bottom: 90px;
+        }
+
+        .acordion__back {
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding-right: 0;
+
+            .acordion__back__left {
+                width: 100%;
+                // height: 100%;
+                padding: 40px 35px;
+                text-align: center;
+                box-sizing: border-box;
+            }
+
+            .acordion__back__right {
+                width: 100%;
+                // margin: auto;
+                // height: auto;
+                // padding-right: 30px;
+                // padding-left: 30px;
+                // border-radius: 4px;
+                // background: #F7F7F7;
+                position: relative;
+                margin-top: 65px;
+                right: 0;
+
+
+            }
+        }
+
+    }
+
+    // ===========================
+    .traveling {
+        .traveling__description {
+            width: 100%;
+            margin: 0;
+            margin-top: 90px;
+            padding-bottom: 80px;
+        }
+    }
+
+    // ==========================
+    .contact {
+
+        width: 100%;
+        height: auto;
+        padding: 80px 0;
+
+        .contact__wraper {
+            width: 100%;
+            margin-bottom: 0;
+
+            .contact__img__1 {
+                display: none;
+            }
+
+            .contact__img__2 {
+                display: none;
+            }
+
+            .contact__form {
+                width: 100%;
+                position: relative;
+            }
+        }
+    }
+
+    // ==========================
+    .footer__top {
+        display: none;
+    }
+
+
+
+    footer .footer__bottom .footer__bottom__container {
+        width: 100%;
+    }
+
+
+    // ==========================
+    .carousel {
+        width: 70%;
+
+    }
+
+    #left__nav {
+        display: none !important;
+    }
+
+    .right__nav {
+        display: none !important;
+
+    }
+
+    header .header__wraper nav .active__search {
+        position: absolute;
+        right: 60px;
+        top: 2px;
+    }
+
+    header .header__wraper nav .search__box {
+        width: 90%;
+        padding-left: 15px;
+        box-sizing: border-box;
+    }
+
+    header .header__wraper {
+        width: 100%;
+        padding-left: 15px;
+        box-sizing: border-box;
+
+    }
+}
