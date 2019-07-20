@@ -208,9 +208,67 @@
         font-size: 45px !important;
     }
 
-    header .header__wraper .logo {
-        width: 30%;
+
+
+
+
+    // header {
+
+    //     .header__wraper {}
+
+    //     .logo {
+    //         width: 30%;
+    //     }
+
+    //     nav {
+    //         .search__box {
+    //             form {
+
+    //                 input {
+    //                     width: 50%;
+    //                 }
+    //             }
+
+
+    //         }
+    //     }
+
+    // }
+
+    // header .header__wraper nav .search__box form input {
+    //     width: 60%;
+
+    // }
+
+    header {
+        height: 60px;
+
+        .header__wraper {
+            // padding-left: 40px;
+
+            .logo {
+                margin-left: 20px;
+            }
+
+            nav {
+                width: 100%;
+
+                .search__box {
+                    .search__container {
+                        margin-right: 30px;
+                    }
+
+                    form {
+                        input {
+                            width: 60%;
+                        }
+                    }
+                }
+            }
+        }
     }
+
+
 
     .viewport .viewport__wraper {
         height: 70vh;
@@ -433,9 +491,14 @@
                 }
             }
 
-            .acordion__back__right .acordion__wraper {
+            .acordion__back__right {
+                box-sizing: border-box;
+                padding: 0;
 
-                padding: 0 20px;
+                .acordion__wraper {
+
+                    padding: 0 20px;
+                }
             }
         }
 
@@ -445,11 +508,14 @@
             margin: 0;
             padding: 0;
             margin-bottom: 50px;
+            box-sizing: border-box;
+
 
 
             .traveling__description__holder {
                 width: 100%;
                 padding: 0 20px;
+                box-sizing: border-box;
 
 
                 h4 {
@@ -499,13 +565,17 @@
 
             .footer__botom__left {
                 width: 100%;
+                text-align: center;
             }
 
             .footer__botom__social {
                 width: 100%;
+                text-align: center;
+
 
                 ul {
-                    float: left;
+                    width: 100%;
+                    padding: 0;
                 }
             }
 

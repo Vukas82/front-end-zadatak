@@ -28,21 +28,61 @@ function searchBarToogle() {
     var x = document.getElementById("search__box");
     var y = document.getElementById("left__nav");
     var z = document.getElementById("active__search");
+    var q = document.getElementById("logo");
+
+    var intViewportWidth = window.innerWidth;
+
+
 
     if (x.style.display === "none") {
         x.style.display = "flex";
         y.style.display = "none";
         z.style.display = "none";
         // z.style.visibility = "hidden";
+        q.style.display = "none";
+
     } else {
         x.style.display = "none";
         y.style.display = "flex";
         z.style.display = "flex";
         // z.style.visibility = "visible";
+        q.style.display = "flex";
+
+
 
     }
+
+    if (y.style.display === "none" && intViewportWidth > 500) {
+        q.style.display = "flex";
+    }
+
 }
 
+// function searchBarToogle() {
+
+//     // var x = document.getElementById("search__box");
+//     var y = document.getElementById("left__nav");
+//     // var z = document.getElementById("active__search");
+//     var q = document.getElementById("logo");
+//     // alert(intViewportWidth)
+//     var intViewportWidth = window.innerWidth;
+
+
+//     if (y.style.display === "none" && intViewportWidth > 768) {
+
+//         // z.style.visibility = "hidden";
+//         q.style.display = "flex";
+
+//     } else {
+
+//         // z.style.visibility = "visible";
+//         q.style.display = "none";
+
+//         // console.log(intViewportWidth);
+
+
+//     }
+// }
 // ============================================================
 
 //carousel
