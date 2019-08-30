@@ -14,8 +14,10 @@
 
     .viewport__wraper {
         width: 80%;
-        height: 60vh;
+        // height: 60vh;
+        height: 450px;
         display: flex;
+        justify-content: space-between;
         margin-top: 40px;
 
         // margin: auto;
@@ -35,16 +37,24 @@
             color: $primary;
             // background-color: gray;
 
-            .content__h1 {}
+            .content__h1 {
+                width: 600px;
+
+            }
 
             .content__p {
+
                 p {
+                    width: 300px;
                     font-family: $font-Medium;
+                    line-height: 27px;
+                    font-size: 16px;
                 }
             }
 
             .action {
                 margin-top: 50px;
+                height: auto;
 
                 a {
                     font-size: .9rem;
@@ -60,7 +70,12 @@
                     background: $primary;
                     color: $headerText;
                     border: 2px solid #fff;
+                    margin-right: 20px;
+                    cursor: pointer;
+                }
 
+                .explore:hover {
+                    background-color: f1f1f1;
                 }
 
                 .video {
@@ -83,6 +98,12 @@
                         }
                     }
                 }
+
+                :hover {
+                    background: #ffffff;
+
+                    color: $headerText;
+                }
             }
         }
 
@@ -95,8 +116,13 @@
             justify-content: flex-end;
             align-items: flex-end;
 
+            position: absolute;
+            // top: 40px;
+            top: 12%;
+            right: 8%;
+
             .review__part {
-                width: 70%;
+                width: 50%;
                 height: 30%;
                 float: left;
                 position: relative;
@@ -111,6 +137,7 @@
                     font-family: $font-Regular;
                     font-size: 12px;
                     width: 85%;
+                    line-height: 20px;
                 }
 
                 .quote {

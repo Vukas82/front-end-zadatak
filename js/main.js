@@ -48,8 +48,6 @@ function searchBarToogle() {
         // z.style.visibility = "visible";
         q.style.display = "flex";
 
-
-
     }
 
     if (y.style.display === "none" && intViewportWidth > 500) {
@@ -94,15 +92,29 @@ const dotsNav = document.querySelector('.carousel__nav');
 const dots = Array.from(dotsNav.children);
 
 
+// const slideWidth = slides[0].getBoundingClientRect().width;
 const slideWidth = slides[0].getBoundingClientRect().width;
-// const slideWidth = slides[0].getBoundingClientRect().width / 3;
 // const slideWidth = 300;
-
+console.log(slides.length)
 
 // arrange the slides next to one another
 
 const setSlidePosition = (slide, index) => {
-    slide.style.left = slideWidth * index + 'px';
+    // slide.style.left = slideWidth * index + 'px'; //sa ovim popunjavas polja
+
+
+    let widthCarousel = window.innerWidth;
+
+    if (widthCarousel > 991) {
+        slide.style.left = (slideWidth * index) / 3 + 'px'; //sa ovim popunjavas polja
+    } else if (widthCarousel > 768) {
+        slide.style.left = (slideWidth * index) / 2 + 'px'; //sa ovim popunjavas polja
+    } else {
+        slide.style.left = slideWidth * index + 'px';
+    }
+
+    // slide.style.left = slideWidth * index + 'px';
+    // slide.style.left = (slideWidth * index) / 3 + 'px'; //sa ovim popunjavas polja
 }
 slides.forEach(setSlidePosition);
 
@@ -113,15 +125,22 @@ const moveToSlide = (track, currentSlide, targetSlide) => {
 }
 
 const updateDots = (currentDot, targetDot) => {
-    currentDot.classList.remove('current-slide');
-    targetDot.classList.add('current-slide');
+    if (targetDot === null) {
+        return
+    } else {
+        currentDot.classList.remove('current-slide');
+        targetDot.classList.add('current-slide');
+    }
+
 }
 
 const hideShowArrows = (slides, prevButton, nextButton, targetIndex) => {
     if (targetIndex === 0) {
         prevButton.classList.add('is-hiden');
         nextButton.classList.remove('is-hiden');
-    } else if (targetIndex === slides.length - 1) {
+        // } else if (targetIndex === slides.length - 1) {
+    } else if (targetIndex >= slides.length - 3) {
+        // } else if (targetIndex === slides.length - (slides.length - 2)) {
         prevButton.classList.remove('is-hiden');
         nextButton.classList.add('is-hiden');
     } else {

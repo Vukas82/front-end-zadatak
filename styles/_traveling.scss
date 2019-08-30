@@ -6,14 +6,15 @@
         font-family: 'Montserrat-Bold';
         color: $hoverUnderline;
         text-align: center;
-        margin-top: 90px;
-        margin-bottom: 160px;
+        margin-top: 80px;
+        margin-bottom: 150px;
     }
 
     .acordion__back {
         width: 80%;
         box-sizing: border-box;
-        height: auto;
+        // height: auto;
+        height: 500px;
         margin: auto;
         background: $acordion-back;
         display: flex;
@@ -30,8 +31,11 @@
         .acordion__back__left {
             width: 40%;
             height: 100%;
-            padding: 40px 35px;
+            padding: 0px 35px;
 
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
             text-align: left;
 
             h4 {
@@ -52,7 +56,9 @@
             }
 
             a {
-                padding: 12px 35px;
+                width: 140px;
+                padding: 15px 35px;
+                margin-bottom: 30px;
                 font-size: 14px;
                 font-family: 'Montserrat-Medium';
                 background: $hoverUnderline;
@@ -65,8 +71,9 @@
 
         .acordion__back__right {
 
-            width: 40%;
-            height: auto;
+            width: 45%;
+            // height: auto;
+            height: 620px;
             padding-right: 30px;
             padding-left: 30px;
             border-radius: 4px;
