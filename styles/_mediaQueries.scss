@@ -280,6 +280,10 @@
         }
     }
 
+    .navbar-list-expanded {
+        top: 59px;
+    }
+
 
 
     .viewport .viewport__wraper {
@@ -360,8 +364,27 @@
         }
     }
 
+    // slider responsive
+    // .slider .slider__wraper .slider__right {
+    // width: 100%;
+    // height: 100%;
+    /* position: absolute; */
+    /* right: -5%; */
+    // position: relative;
+    // }
+    // slider responsive
+
     .slider {
         padding: 0;
+        height: 550px;
+    }
+
+    .carousel__button {
+        background: #f1f1f163;
+    }
+
+    .carousel__button img {
+        filter: invert(1);
     }
 
     .slider .slider__wraper {
@@ -395,6 +418,8 @@
 
         .slider__right {
             width: 100%;
+            left: 0%;
+            position: relative;
             overflow: hidden;
 
             .carousel {
