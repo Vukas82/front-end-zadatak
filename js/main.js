@@ -20,6 +20,33 @@
 //     // }
 // }
 
+// changeing main image based on screen size
+
+// var someimage = 'changableBackgroudImage';
+
+// function init() {
+
+//     // let backgroundImg = 'background';
+//     let backgroundImg = 'background_resize';
+//     let backgroundResponsive = 'originalni-auto-delovi-kribzon-responsive__2';
+//     let screen = document
+
+//     let viewport = document.getElementById('viewport');
+//     viewport.style.background = 'url(./images/' + backgroundImg + '.jpg) no-repeat center center';
+
+//     // console.log('viewport');
+
+//     // viewport.style.background = 'url(./images/' + backgroundImg + '.jpg) no-repeat center center'
+//     // viewport.style.background = 'url(./images/' + backgroundImg + '.jpg) no-repeat center center'
+
+// function getResolution() {
+//     alert("Your screen resolution is: " + window.screen.width * window.devicePixelRatio + "x" + window.screen.height * window.devicePixelRatio + 'pixel ratio' + window.devicePixelRatio);
+
+// }
+// getResolution();
+
+// }
+
 //-----------------------------------------
 
 

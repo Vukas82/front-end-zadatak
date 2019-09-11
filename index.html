@@ -13,6 +13,8 @@
 
 </head>
 
+<!-- <body onload="init()"> -->
+
 <body>
 
     <header>
@@ -219,8 +221,16 @@
     </nav>
     <!-- ==========================end small nav -->
 
-    <div class="viewport">
-        <img src="/images/background.jpg" alt="sea-beach">
+    <div id="viewport" class="viewport">
+
+        <picture>
+            <source media="(min-width: 1400px)" srcset="images/background_resize.jpg">
+            <source media="(min-width: 760px)" srcset="images/background__1400__crop__resize.jpg">
+            <source media="(min-width: 400px)" srcset="images/background__800__crop__resize.jpg">
+            <img src="images/background__400__crop__resize.jpg" alt="sea-beach">
+        </picture>
+
+
         <div class="viewport__wraper">
             <div class="viewport__wraper__left">
                 <div class="content__h1">
@@ -289,7 +299,7 @@
                                     <!-- <h4>DEČJI OBRAZOVNI CENTAR SIRIJUS</h4>
                                     <P>Palmotićeva 17. Beograd</P> -->
                                 </div>
-                                <img class=" carousel__image" src="/images/slider/slider-1.jpg" alt="">
+                                <img class=" carousel__image" src="/images/slider/slider-1__resize__crop.jpg" alt="">
                                 <!-- <img class="carousel__image" src="/images/slider/slider-2.jpg" alt="">
                                 <img class=" carousel__image" src="/images/slider/slider-1.jpg" alt=""> -->
 
@@ -301,14 +311,14 @@
 
                                 </div>
                                 <!-- <img class=" carousel__image" src="/images/slider/slider-1.jpg" alt=""> -->
-                                <img class="carousel__image" src="/images/slider/slider-2.jpg" alt="">
+                                <img class="carousel__image" src="/images/slider/slider-2__resize.jpg" alt="">
                                 <!-- <img class=" carousel__image" src="/images/slider/slider-1.jpg" alt=""> -->
                             </li>
                             <li class="carousel__slide">
                                 <div id="innerDiv3" class="carousel-div is-hiden" style="">
 
                                 </div>
-                                <img class=" carousel__image" src="/images/slider/slider-1.jpg" alt="">
+                                <img class=" carousel__image" src="/images/slider/slider-1__resize__crop.jpg" alt="">
                                 <!-- <img class="carousel__image" src="/images/slider/slider-2.jpg" alt="">
                                 <img class=" carousel__image" src="/images/slider/slider-1.jpg" alt=""> -->
                             </li>
@@ -318,14 +328,14 @@
                                 </div>
                                 <!-- <img class=" carousel__image" src="/images/slider/slider-1.jpg" alt="">
                                 <img class="carousel__image" src="/images/slider/slider-2.jpg" alt=""> -->
-                                <img class=" carousel__image" src="/images/slider/slider-1.jpg" alt="">
+                                <img class=" carousel__image" src="/images/slider/slider-1__resize__crop.jpg" alt="">
                             </li>
                             <li class="carousel__slide">
                                 <div id="innerDiv3" class="carousel-div is-hiden" style="">
 
                                 </div>
                                 <!-- <img class=" carousel__image" src="/images/slider/slider-1.jpg" alt=""> -->
-                                <img class="carousel__image" src="/images/slider/slider-2.jpg" alt="">
+                                <img class="carousel__image" src="/images/slider/slider-2__resize.jpg" alt="">
                                 <!-- <img class=" carousel__image" src="/images/slider/slider-1.jpg" alt=""> -->
                             </li>
                             <!-- <li <li class="carousel__slide">
@@ -344,7 +354,7 @@
 
                                 </div>
                                 <!-- <img class=" carousel__image" src="/images/slider/slider-1.jpg" alt=""> -->
-                                <img class="carousel__image" src="/images/slider/slider-2.jpg" alt="">
+                                <img class="carousel__image" src="/images/slider/slider-2__resize.jpg" alt="">
                                 <!-- <img class=" carousel__image" src="/images/slider/slider-1.jpg" alt=""> -->
                             </li>
 
